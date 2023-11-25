@@ -1,0 +1,77 @@
+.body {
+			background-image: url(bg.jpeg);
+			background-size: cover;
+		}
+
+		.box {
+			
+			height: 400px;
+			width: 200px;
+			position: absolute;
+		}
+
+		.target1 {
+			background-image: url(2.png);
+			height: 20px;
+			width: 20px;
+			position: absolute;
+			left: 500px;
+			top: 300px;
+			background-size: 100% 100%;
+			transition: 2s;
+		}
+
+		.target2 {
+			background-image: url(3.png);
+			height: 20px;
+			width: 20px;
+			position: absolute;
+			left: 700px;
+			top: 300px;
+			background-size: 100% 100%;
+			transition: 2s;
+
+		}
+
+		.target3 {
+			background-image: url(4.png);
+			height: 20px;
+			width: 20px;
+			position: absolute;
+			left: 900px;
+			top: 300px;
+			background-size: 100% 100%;
+			transition: 2s;
+
+		}
+
+		.target4 {
+			background-image: url(5.png);
+			height: 20px;
+			width: 20px;
+			position: absolute;
+			left: 1100px;
+			top: 300px;
+			background-size: 100% 100%;
+			transition: 2s;
+
+		}
+
+		.target5 {
+			background-image: url(6.png);
+			height: 20px;
+			width: 20px;
+			position: absolute;
+			left: 1300px;
+			top: 300px;
+			background-size: 100% 100%;
+			transition: 2s;
+
+		}
+
+		.box2 {
+			height: 1000px;
+			background: red;
+			width: 2000px;
+			display: none;
+		}

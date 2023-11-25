@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	
+</head>
+<body class="body">
+	
+	<div class="box">
+		<h1>Очки: <span class="as"></span></h1>
+		<h1 class="apple">Яблоко</h1>
+		<h1 class="gun">Пистолет</h1>
+		<h1 class="ice">Морожоное</h1>
+		<h1 class="berry">Клубника</h1>
+		<h1 class="bomb">Бомба</h1>
+
+	</div>
+
+	<div class="target1">
+		
+	</div>
+
+	<div class="target2">
+		
+	</div>
+
+	<div class="target3">
+		
+	</div>
+
+	<div class="target4">
+		
+	</div>
+
+	<div class="target5">
+		
+	</div>
+
+	<script type="text/javascript">
+		let score = 0;
+
+		function getRandomInt(max) {
+  			return Math.floor(Math.random() * max);
+		}
+		maxy = 900;
+
+		maxx = 1800;
+
+		y1 = getRandomInt(maxy)
+		y2 = getRandomInt(maxy)
+		y3 = getRandomInt(maxy)
+		y4 = getRandomInt(maxy)
+		y5 = getRandomInt(maxy)
+
+		x1 = getRandomInt(maxx)
+		x2 = getRandomInt(maxx)
+		x3 = getRandomInt(maxx)
+		x4 = getRandomInt(maxx)
+		x5 = getRandomInt(maxx)
+
+
+		document.querySelector(".target1").style.top = y1 + "px"
+		document.querySelector(".target1").style.left = x1 + "px"
+
+		document.querySelector(".target2").style.top = y2 + "px"
+		document.querySelector(".target2").style.left = x2 + "px"
+
+		document.querySelector(".target3").style.top = y3 + "px"
+		document.querySelector(".target3").style.left = x3 + "px"
+
+		document.querySelector(".target4").style.top = y4 + "px"
+		document.querySelector(".target4").style.left = x4 + "px"
+
+		document.querySelector(".target5").style.top = y5 + "px"
+		document.querySelector(".target5").style.left = x5 + "px"
+
+		document.querySelector(".target1").onclick = function() {
+			score = score + 1;
+
+			document.querySelector(".as").innerHTML = score;
+			document.querySelector(".target1").style.top = "700px"
+			document.querySelector(".target1").style.left = "300px"
+			document.querySelector(".target1").style.height =	"200px"
+			document.querySelector(".target1").style.width =	"200px"
+			document.querySelector(".apple").style.textDecoration = "line-through"
+		}
+
+		document.querySelector(".target2").onclick = function() {
+			score = score + 1;
+
+			document.querySelector(".as").innerHTML = score;
+			document.querySelector(".target2").style.top = "700px"
+			document.querySelector(".target2").style.left = "600px"
+			document.querySelector(".target2").style.height =	"200px"
+			document.querySelector(".target2").style.width =	"200px"
+			document.querySelector(".gun").style.textDecoration = "line-through"
+		}
+
+		document.querySelector(".target3").onclick = function() {
+			score = score + 1;
+
+			document.querySelector(".as").innerHTML = score;
+			document.querySelector(".target3").style.top = "700px"
+			document.querySelector(".target3").style.left = "900px"
+			document.querySelector(".target3").style.height =	"200px"
+			document.querySelector(".target3").style.width =	"200px"
+			document.querySelector(".ice").style.textDecoration = "line-through"
+		}
+
+		document.querySelector(".target4").onclick = function() {
+			score = score + 1;
+
+			document.querySelector(".as").innerHTML = score;
+			document.querySelector(".target4").style.top = "700px"
+			document.querySelector(".target4").style.left = "1200px"
+			document.querySelector(".target4").style.height =	"200px"
+			document.querySelector(".target4").style.width =	"200px"
+			document.querySelector(".berry").style.textDecoration = "line-through"
+		}
+
+		document.querySelector(".target5").onclick = function() {
+			score = score + 1;
+
+			document.querySelector(".as").innerHTML = score;
+			document.querySelector(".target5").style.top = "700px"
+			document.querySelector(".target5").style.left = "1600px"
+			document.querySelector(".target5").style.height =	"200px"
+			document.querySelector(".target5").style.width =	"200px"
+			document.querySelector(".bomb").style.textDecoration = "line-through"
+		}
+
+
+	</script>
+</body>
+</html>
